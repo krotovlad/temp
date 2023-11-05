@@ -1,0 +1,303 @@
+@colortext: #A276FF;                       
+@fontOswald:'Oswald', sans-serif;          
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+   font-size: 16px;                         //общий шрифт высота
+}
+
+.body{
+    font-size: 16px;                      //16px
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+    font-weight: 400;
+    background-image: url(./Img/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+}
+
+.body-bg{
+    background-color: #0507299c;             
+    display: flex;                  // заставили выстроиться Хедер и майн слева направо в блоке Боди-бг
+    
+}
+
+.main-header {
+    background-color: #0b0b0d;
+    display: inline-flex;
+    padding-left:  93px;
+    padding-right: 154px;
+    flex-direction: column;
+    align-items: center;         // по центру
+
+    }
+
+.logo {
+    margin: 40px 0 0 0;                 // отступы yourlogo сверху 80 справа0 низ0 слева95
+    font-size: 3rem;                        // размер 3 рем,30 пикселей
+    text-transform: uppercase;               // заглавные буквы
+    font-family: @fontOswald;                // шрифт как указали для всего наверху,переменная @fontOswald
+    font-weight: 700;                         // жирный шрифт 700
+    color: #FFF;
+                             
+}
+
+.logo__text {
+    color: @colortext;
+
+}
+
+
+.block-nav {
+    margin-top: 30px;
+}
+
+.nav-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;             //по умолчанию полностью убрать все стили
+    display: flex; 
+    flex-direction: column;       // все наши блоки выстроились по вертикали
+
+}
+
+.nav-item {
+    font-family: @fontOswald;
+    
+        &__link {
+            text-decoration: none;
+            font-size: 17px;
+            text-transform: uppercase;
+            line-height: 47px;
+            color: #FFF;
+            transition: all 0.3 ease-in-out;        // анимация по наведению мышки на все эдементы 
+                                                     //  будет включаться на другой цвет плавно
+                &:hover{
+                    color:@colortext;                // меняет первоначальный цвет на указанный
+                }
+        }
+}
+
+.block-support {
+    margin-top: 300px;
+    
+}
+
+.support-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;             //по умолчанию полностью убрать все стили
+    display: flex; 
+    flex-direction: column; 
+      
+      }
+.support-item {
+    font-family: @fontOswald;    
+        &__link {
+        text-decoration: none;
+        font-size: 17px;
+        text-transform: uppercase;
+        line-height: 47px;
+        color: #FFF;
+        transition: all 0.3 ease-in-out;        // анимация по наведению мышки на все эдементы 
+                                                 //  будет включаться на другой цвет плавно
+            &:hover{
+                color:@colortext;                // меняет первоначальный цвет на указанный
+            }
+        }
+    }
+    .social {
+        width: 300px;
+        height: 80px;
+        background-color: #A276FF;
+        border-radius: 0 0 10px 10px;
+        position: absolute;
+        top: 2px;
+        right: 100px;
+
+    } 
+    .icon1 {
+     width: 23px;
+     position: absolute;
+     top: 31px;
+     bottom: 23px;
+     left: 50px;
+     transition: all 1 ease-in-out;         
+                                                 
+            &:hover{
+                transform: scale(2);                
+            }
+    }
+
+    .icon2 {
+        width: 25px;
+        position: absolute;
+        top: 27px;
+        right: 41px;
+        bottom: 21px;
+        transition: all 1 ease-in-out;        
+                                                 
+            &:hover{
+                transform: scale(2);
+            }
+    } 
+   
+        
+        
+ .main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content:start ;            
+    margin-top: 200px;
+    margin-left: 207px;
+}
+
+.main-title {
+    font-family: @fontOswald;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 42px;    
+    color: #FFF;
+}
+.template {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: @colortext;
+   
+}
+
+.main-description {
+    margin-top: 30px;                          // отступ отверхнего блока 30 пикселя
+    text-align: left;                          //выровнять текст по левой стороне
+    font-family: 'Roboto' ,sans-serif;         // шрифт Робото
+    font-weight: 400;                          // шрифт регуляр
+    font-size: 17px;                           // высота букв 17
+    color: #FFF;                             // цвет белый
+    margin-bottom: 30px;                       // отступ снизу 30 пикселей
+
+}
+
+.btn {                                                        //  кнопка
+    background-color: transparent;                            // цвета у кнопки нету трнспарент                             
+    border-radius: 17px;                         // радиус закругления по краям посмотрели на макете 17 пикселей
+    border: 2px solid #FFF ;                    // обводка толщина 2 пикселя,сплошная солид, цвет белый       
+    padding: 10px 60px;                           //отступы   10 сверху-снизу и 60 слева-справа
+    transition: 0.3s;                             // трасформация -меняет цвет плавно за 0.3сек
+    &:hover {
+        background-color: #a5a529;              // меняет цвет с основного на этот при наведении мышки
+    }
+                         
+}
+.main-btn {
+    text-transform: uppercase;           //текс заглавными
+    text-decoration: none;
+    font-family: @fontOswald;             // шрифт основной 
+    font-weight: 700;                     //шрифт жирный
+    font-size: 20px;                      // высота 20 пикс
+    color: #FFF;                        // цвет белый   
+    width: 50%;                           // высота 50%
+    text-align: center;                   // выравнивание текста по центру
+
+}
+
+
+
+.img-line {
+    margin-top: 30px;                       //отступ сверху 30 пикс
+    float:left;                           //прижимается к левой стороне родителя:)  
+    margin-right: 100px;                  //отступ справа 100 зч
+    width: 100%;                          //ширина 100%
+    height: auto;                         //высота автомат
+    transition: all 0.3 ease-in-out;
+                                  // каждая картинка увеличивается при наведении на
+                                  //нее курсора
+    .img-scale:hover {
+        transform: scale(1.2);
+        
+        
+    } 
+    
+       
+}
+.img-scale {
+    margin:36px 50px 0 0;                 
+    border: 6px solid #fff;
+    transition: 0.5s;
+    &:hover {
+        border: 6px solid #a5a525;
+    }
+    
+    
+         
+}
+
+.news {
+    margin-top: 30px;
+    font-family: @fontOswald;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:#fff;
+    font-size: 38px;
+}
+
+.btn1 {
+    width: 37px;
+    height: auto;
+}
+
+
+
+.text1 {
+    margin-top: 15px;                          // отступ от верхнего блока 15 пикселя
+    text-align: left;                          //выровнять текст по левой стороне
+    font-family: 'Roboto' ,sans-serif;      
+    font-weight: 400;
+    font-size: 17px;
+    color: #FFF;
+    margin-bottom: 102px;
+ 
+}
+
+.main-block1 {
+    width: 1552px;
+    height: auto;
+    display: flex;
+    justify-content:start;            
+    margin-top: 209px;
+    margin-left: 110px;
+    background-color: #fff;
+    border-radius:  25px 25px 0 0;
+}
+.img-line1 {
+    
+}
+.textnews {
+    margin-top: 93px;
+    margin-left: 110px;
+}
+.pagenews {
+    margin-top: 108px;
+    margin-right: 116px;
+    margin-left: 123px;
+    border: 6px solid #fff;
+    border-radius: 25px;
+    transition: 0.5s;
+    &:hover {
+        border: 6px solid #a5a525;
+        transform: scale(1.4);
+    }
+    
+}
+///////  айпад @
+
+@media(max-width:830) {
+    padding-left: 32px;
+    padding-right: 60px;}
+
+    

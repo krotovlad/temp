@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+.body {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #FFF;
+  font-weight: 400;
+  background-image: url(./Img/bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.body-bg {
+  background-color: #0507299c;
+  display: flex;
+}
+.main-header {
+  background-color: #0b0b0d;
+  display: inline-flex;
+  padding-left: 93px;
+  padding-right: 154px;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  margin: 40px 0 0 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: #FFF;
+}
+.logo__text {
+  color: #A276FF;
+}
+.block-nav {
+  margin-top: 30px;
+}
+.nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.nav-item {
+  font-family: 'Oswald', sans-serif;
+}
+.nav-item__link {
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  line-height: 47px;
+  color: #FFF;
+  transition: all 0.3 ease-in-out;
+}
+.nav-item__link:hover {
+  color: #A276FF;
+}
+.block-support {
+  margin-top: 300px;
+}
+.support-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.support-item {
+  font-family: 'Oswald', sans-serif;
+}
+.support-item__link {
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  line-height: 47px;
+  color: #FFF;
+  transition: all 0.3 ease-in-out;
+}
+.support-item__link:hover {
+  color: #A276FF;
+}
+.social {
+  width: 300px;
+  height: 80px;
+  background-color: #A276FF;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  top: 2px;
+  right: 100px;
+}
+.icon1 {
+  width: 23px;
+  position: absolute;
+  top: 31px;
+  bottom: 23px;
+  left: 50px;
+  transition: all 1 ease-in-out;
+}
+.icon1:hover {
+  transform: scale(2);
+}
+.icon2 {
+  width: 25px;
+  position: absolute;
+  top: 27px;
+  right: 41px;
+  bottom: 21px;
+  transition: all 1 ease-in-out;
+}
+.icon2:hover {
+  transform: scale(2);
+}
+.main-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: start ;
+  margin-top: 200px;
+  margin-left: 207px;
+}
+.main-title {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 42px;
+  color: #FFF;
+}
+.template {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #A276FF;
+}
+.main-description {
+  margin-top: 30px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #FFF;
+  margin-bottom: 30px;
+}
+.btn {
+  background-color: transparent;
+  border-radius: 17px;
+  border: 2px solid #FFF;
+  padding: 10px 60px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #a5a529;
+}
+.main-btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFF;
+  width: 50%;
+  text-align: center;
+}
+.img-line {
+  margin-top: 30px;
+  float: left;
+  margin-right: 100px;
+  width: 100%;
+  height: auto;
+  transition: all 0.3 ease-in-out;
+}
+.img-line .img-scale:hover {
+  transform: scale(1.2);
+}
+.img-scale {
+  margin: 36px 50px 0 0;
+  border: 6px solid #fff;
+  transition: 0.5s;
+}
+.img-scale:hover {
+  border: 6px solid #a5a525;
+}
+.news {
+  margin-top: 30px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  font-size: 38px;
+}
+.btn1 {
+  width: 37px;
+  height: auto;
+}
+.text1 {
+  margin-top: 15px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #FFF;
+  margin-bottom: 102px;
+}
+.main-block1 {
+  width: 1552px;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  margin-top: 209px;
+  margin-left: 110px;
+  background-color: #fff;
+  border-radius: 25px 25px 0 0;
+}
+.textnews {
+  margin-top: 93px;
+  margin-left: 110px;
+}
+.pagenews {
+  margin-top: 108px;
+  margin-right: 116px;
+  margin-left: 123px;
+  border: 6px solid #fff;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+.pagenews:hover {
+  border: 6px solid #a5a525;
+  transform: scale(1.4);
+}
+@media (max-width: 830) {
+  padding-left: 32px;
+  padding-right: 60px;
+}
+
+/*# sourceMappingURL=style.css.map */
